@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #e8f5e9;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+#principal {
+    background-color: #e8f5e9;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+#principal img {
+    width: 120px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 6px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #2e7d32;
+    background-color: #f1f8e9;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+
+#lista-enderecos {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#lista-enderecos {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#remover {
+    background-color: #c62828;
+}
+
+#remover:hover {
+    background-color: #b71c1c;
+}
+
+#editar {
+    background-color: #0048b4;
+}
+
+#editar:hover {
+    background-color: #0048b4;
+}
+
+
+.endereco-item {
+    background-color: #f1f8e9;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.endereco-item h3 {
+    margin-top: 0;
+    color: #000000;
+}
+
+.endereco-item p {
+    margin: 5px 0;
+    font-size: 14px;
+}

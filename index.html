@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Alunos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="principal">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Instituto_Federal_do_Paran%C3%A1_-_Marca_Vertical_2015.svg/800px-Instituto_Federal_do_Paran%C3%A1_-_Marca_Vertical_2015.svg.png" alt="Logo">
+        <h1>Cadastro Alunos</h1>
+        
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Digite seu email">
+        </div>
+        
+        <div class="form-group">
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" maxlength="8" placeholder="Ex: 01001000">
+            <div id="loading" style="display: none;">Buscando...</div>
+        </div>
+
+        <div class="form-group">
+            <label for="logradouro">Logradouro</label>
+            <input type="text" id="logradouro" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="numero">Número</label>
+            <input type="text" id="numero" placeholder="Ex: 1265">
+        </div>
+
+        <div class="form-group">
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" readonly>
+        </div>
+        <div class="form-group">
+            <label for="localidade">Cidade</label>
+            <input type="text" id="localidade" readonly>
+        </div>
+        <div class="form-group">
+            <label for="uf">UF</label>
+            <input type="text" id="uf" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="buscar"></label>
+            <input type="text" id="buscar" placeholder="🔍 Buscar usuário por nome...">
+        </div>
+
+        
+        <button id="salvar">Cadastrar</button>
+        <div id="lista-enderecos">
+            <button id="remover">Remover</button>
+            <button id="editar">Editar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
