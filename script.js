@@ -99,8 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('enderecos', JSON.stringify(enderecos));
     
         carregarEnderecos();
-        
-        alert('Endereço salvo com sucesso!');
     }
 
     function carregarEnderecos() {
@@ -127,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function removerEndereco() {
         if (confirm('Tem certeza que deseja limpar o endereço salvo?')) {
-            localStorage.removeItem('endereco');
+            localStorage.removeItem('enderecos');
             carregarEnderecos();
         }
     }
